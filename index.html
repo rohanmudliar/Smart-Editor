@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Smart Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="jQuery/jquery.js"></script>
+</head>
+
+<body>
+
+    <div class="everyThing">
+        <header>
+            <div class="logo">
+                Smart Editor!
+            </div>
+            <div class="clickers">
+                <div id="htmlPanel" class="htmlPanel Panel active">Html</div>
+                <div id="cssPanel" class="cssPanel Panel">Css</div>
+                <div id="javascriptPanel" class="javascriptPanel Panel">JavaScript</div>
+                <div id="outputPanel" class="outputPanel Panel active">Output</div>
+            </div>
+
+        </header>
+        <div class="clear-fix"></div>
+
+        <div class="container">
+            <div class="htmlContainer width ">
+                <label class="htmlLabel" for="htmlData">HTML</label>
+                <textarea name="html" id="htmlData" class="htmlData height">Hey!
+<p id="paragraph">Thank you for visiting my Webpage. Start Typing here.</p></textarea>
+            </div>
+            <div class="cssContainer width none">
+                <label class="cssLabel" for="cssData">CSS</label>
+                <textarea name="css" id="cssData" class="cssData height">p{ color: red; }</textarea>
+            </div>
+            <div class="javascriptContainer width none">
+                <label class="javascriptLabel" for="javascriptData">JavaScript</label>
+                <textarea name="javascript" id="javascriptData" class="javascriptData height">document.getElementById("paragraph").innerHTML = "Hello! Have a great day :)";</textarea>
+            </div>
+            <div class="outputContainer width ">
+                <label class="outputLabel" for="outputData">OUTPUT</label>
+                <iframe id="outputData" class="outputData height "></iframe>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
